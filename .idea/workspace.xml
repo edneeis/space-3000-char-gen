@@ -4,24 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6396f665-60f8-4e2b-843c-8945330baacc" name="Changes" comment="wip">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Armor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Description.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Equipment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Feature.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Perk.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Species.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Spell.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Weapon.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/com/space/core/SkillTests.kt" afterDir="false" />
+    <list default="true" id="6396f665-60f8-4e2b-843c-8945330baacc" name="Changes" comment="Added base objects for entire Character">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/space/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/space/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Ability.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Ability.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Attribute.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/space/core/AttributeModifier.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Character.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Character.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Skill.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Skill.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/space/core/AbilityTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/space/core/AbilityTests.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,12 +228,21 @@
       <option name="project" value="LOCAL" />
       <updated>1753044831942</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added base objects for entire Character">
+      <option name="closed" value="true" />
+      <created>1753048991312</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1753048991312</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="wip" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip" />
+    <MESSAGE value="Added base objects for entire Character" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added base objects for entire Character" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
