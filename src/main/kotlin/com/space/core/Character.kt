@@ -2,6 +2,15 @@ package com.space.core
 
 class Character {
     var name: String = ""
+    var species: Species = Species() //TODO: Complete species object
+    var level: Int = 1
+    var healthPoints: Int = 0 //TODO: Make health points object and modifiers
+    var magicPoints: Int = 0 //TODO: Make magic points object and modifiers
+    var armorPoints: Int = 0 //TODO: Make armor points object
+    var armorClass: Int = 0  //TODO: Make armor class object and modifiers
+    var resistances: MutableList<String> = mutableListOf()
+    var vulnerabilities: MutableList<String> = mutableListOf()
+    var conditions: MutableList<String> = mutableListOf()
     var abilities: Array<Ability> = arrayOf(
         Ability("Strength"),
         Ability("Dexterity"),
@@ -9,7 +18,7 @@ class Character {
         Ability("Intelligence"),
         Ability("Spirituality"),
         Ability("Charisma")
-    )
+    ) // TODO: Make default modifiers for score
     var skills: Array<Skill> = arrayOf(
         Skill("Melee"),
         Skill("Unarmed"),
@@ -39,25 +48,33 @@ class Character {
         Skill("Animal Handling"),
         Skill("Inspiration"),
     )
+    var features: MutableList<Feature> = mutableListOf() //TODO: Complete feature object
+    var perks: MutableList<Perk> = mutableListOf() //TODO: Complete perk object
+    var credits: Int = 0
+    var equipment: MutableList<Equipment> = mutableListOf() //TODO: Complete equipment object
+    var weapons: MutableList<Weapon> = mutableListOf() //TODO: Complete weapon object
+    var armor: MutableList<Armor> = mutableListOf() //TODO: Complete armor object
+    var spells: MutableList<Spell> = mutableListOf() //TODO: Complete spell object
+    var description: Description = Description()
 
     var modifiers: MutableList<Modifier> = mutableListOf()
 
-    fun GetAbilityByName(name: String): Ability? {
+    fun getAbilityByName(name: String): Ability? {
         return abilities.firstOrNull { it.name.equals(name, ignoreCase = true) }
     }
 
-    fun GetSkillByName(name: String): Skill? {
+    fun getSkillByName(name: String): Skill? {
         return skills.firstOrNull { it.name.equals(name, ignoreCase = true) }
     }
 
-    fun CalculateModifiers() {
+    fun calculateModifiers() {
         for (ability in abilities) {
             ability.modifiers = modifiers.filter { it.appliesTo(ability) }.toTypedArray()
-            ability.CalculateScore()
+            ability.calculateScore()
         }
         for (skill in skills) {
             skill.modifiers = modifiers.filter { it.appliesTo(skill) }.toTypedArray()
-            skill.CalculateScore()
+            skill.calculateScore()
         }
     }
 }

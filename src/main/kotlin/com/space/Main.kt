@@ -14,7 +14,7 @@ fun main() {
         ability.baseScore = scores[i]
         println("Ability: ${ability.name}, Base Score: ${ability.baseScore}")
     }
-    //char.GetAbilityByName("Strength")?.BaseScore = 10
+    //char.getAbilityByName("Strength")?.BaseScore = 10
 
 
     char.modifiers.add(AbilityModifier().apply {
@@ -60,7 +60,7 @@ fun main() {
         skillName = "Melee"
     })
 
-    char.CalculateModifiers()
+    char.calculateModifiers()
 
     println("Character: ${char.name}")
     for (i in char.abilities.indices) {
