@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6396f665-60f8-4e2b-843c-8945330baacc" name="Changes" comment="Added base objects for entire Character">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6396f665-60f8-4e2b-843c-8945330baacc" name="Changes" comment="Updated gitignore">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/space/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/space/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Ability.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Ability.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/space/core/AbilityModifier.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/space/core/AbilityModifier.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Character.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/space/core/Character.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/space/core/AbilityTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/space/core/AbilityTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/space/core/CharacterTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/space/core/CharacterTests.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +70,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "edneeis"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/edneeis/space-3000-char-gen.git",
+    "accountId": "44d07487-38d4-4dc7-acdf-0fbdb9aa345c"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
@@ -88,7 +104,7 @@
     "Gradle.CharGen [test].executor": "Run",
     "Gradle.Download Sources.executor": "Run",
     "Kotlin.MainKt (1).executor": "Run",
-    "Kotlin.MainKt.executor": "Coverage",
+    "Kotlin.MainKt.executor": "Run",
     "Kotlin.Unnamed.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -118,7 +134,7 @@
       <recent name="com.space.core.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CharGen [test]">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="AbilityTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -203,10 +219,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Gradle.CharGen [test]" />
         <item itemvalue="Gradle.CharGen [build]" />
         <item itemvalue="Gradle.AbilityTests" />
-        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
@@ -236,13 +252,22 @@
       <option name="project" value="LOCAL" />
       <updated>1753048991312</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated gitignore">
+      <option name="closed" value="true" />
+      <created>1753049165694</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1753049165694</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="wip" />
     <MESSAGE value="Added base objects for entire Character" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added base objects for entire Character" />
+    <MESSAGE value="Updated gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

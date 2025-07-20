@@ -1,6 +1,6 @@
 package com.space.core
 
-class AbilityModifier(scoreModifier: Int = 0, var abilityName: String = "") : Modifier(scoreModifier) {
+open class AbilityModifier(scoreModifier: Int = 0, var abilityName: String = "") : Modifier(scoreModifier) {
     init {
         category = "Ability"
     }

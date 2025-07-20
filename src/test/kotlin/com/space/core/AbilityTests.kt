@@ -2,6 +2,8 @@ package com.space.core
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.params.ParameterizedTest
+import org.junit.jupiter.params.provider.CsvSource
 
 class AbilityTests {
 
@@ -63,6 +65,45 @@ class AbilityTests {
         ability.modifiers = arrayOf(disabledModifier, enabledModifier)
         ability.calculateScore()
         assertEquals(15, ability.score, "Score should only include enabled modifiers")
+    }
+
+    @ParameterizedTest
+    @CsvSource(
+        "1,-3",
+        "5,-3",
+        "6,-2",
+        "8,-1",
+        "10,0",
+        "12,1",
+        "14,2",
+        "16,3",
+        "18,4",
+        "20,5",
+        "22,6",
+        "24,7",
+        "26,8",
+        "28,9",
+        "30,10",
+        "32,11",
+        "34,12",
+        "36,13",
+        "38,14",
+        "40,15",
+        "50,15"
+    )
+    fun `calculate returns correct modifier for ability score`(score: Int, expectedModifier: Int) {
+        val ability = Ability("Test", score)
+        ability.calculateScore()
+        assertEquals(expectedModifier, ability.modifier, "Modifier should be $expectedModifier for ability score of $score")
+    }
+
+    @Test
+    fun `calculate returns correct modifier for ability score with modifiers`() {
+        val expectedModifier = 2
+        val ability = Ability("Test", 10)
+        ability.modifiers = arrayOf(AbilityModifier(5, "Test"))
+        ability.calculateScore()
+        assertEquals(expectedModifier, ability.modifier, "Modifier should be $expectedModifier")
     }
 
 }

@@ -65,11 +65,10 @@ fun main() {
     println("Character: ${char.name}")
     for (i in char.abilities.indices) {
         val ability = char.abilities[i]
-        println("Ability: ${ability.name}, Base Score: ${ability.baseScore}, Score: ${ability.score}, Modifiers: ${ability.modifiers.joinToString { "${it.description} (+${it.scoreModifier})" }}")
+        println("Ability: ${ability.name}, Base Score: ${ability.baseScore}, Score: ${ability.score}, Modifier: ${ability.modifier}, Modifiers: ${ability.modifiers.joinToString { "${it.description} (+${it.scoreModifier})" }}")
+        for (i in ability.skills.indices) {
+            val skill = ability.skills[i]
+            println("Skill: ${skill.name}, Base Score: ${skill.baseScore}, Score: ${skill.score}, Modifier: ${skill.modifier}, Modifiers: ${skill.modifiers.joinToString { "${it.description} (+${it.scoreModifier})" }}")
+        }
     }
-    for (i in char.skills.indices) {
-        val skill = char.skills[i]
-        println("Skill: ${skill.name}, Base Score: ${skill.baseScore}, Score: ${skill.score}, Modifiers: ${skill.modifiers.joinToString { "${it.description} (+${it.scoreModifier})" }}")
-    }
-
 }
